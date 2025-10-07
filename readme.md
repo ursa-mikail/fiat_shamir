@@ -29,6 +29,12 @@ sequenceDiagram
 
 ```    
 
+🔍 Key Features
+
+- Challenge c is self-generated using a hash.
+- No live verifier needed → offline / one-message proof.
+- Security depends on Fiat–Shamir heuristic.
+- Suitable for digital signatures and blockchain proofs.
 
 ## Interactive
 ![fiat_shamir_interactive](fiat_shamir_interactive.png)
@@ -56,8 +62,28 @@ sequenceDiagram
     Bob-->>Alice: ✅ Proof accepted if equation holds
 ```
 
+🔍 Key Features
+
+- Challenge c comes from Verifier (Bob).
+- Requires 2-way communication.
+- Guarantees true interactivity.
+- No reliance on hash-derived randomness.
+
 ---
 
 ![fiat_shamir_interactive_vs_non_interactive](fiat_shamir_interactive_vs_non_interactive.png)
 
 ---
+
+## 🟩 Diagrammatic Difference Summary
+
+| Feature                 | Interactive Version     | Non-Interactive Version                |
+| ----------------------- | ----------------------- | -------------------------------------- |
+| **Challenge origin**    | From Verifier (random)  | From hash of transcript (self-derived) |
+| **Number of messages**  | 3 messages → V, c, r    | 1 message → (V, c, r)                  |
+| **Communication**       | Requires back-and-forth | One-way proof                          |
+| **Protocol style**      | Multi-round (Prover ↔ Verifier) | Single message (Prover self-contained) |
+| **Security assumption** | True ZKP soundness      | Relies on hash as random oracle        |
+| **Usage**               | Authentication sessions | Offline proofs, blockchain signatures  |
+| **Verifier role**       | Active                  | Passive                                |
+
