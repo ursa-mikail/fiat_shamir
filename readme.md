@@ -56,6 +56,8 @@ sequenceDiagram
     Bob-->>Alice: ✅ Proof accepted if equation holds
 ```
 
+---
 
 ![fiat_shamir_interactive_vs_non_interactive](fiat_shamir_interactive_vs_non_interactive.png)
 
+---
