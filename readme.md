@@ -1,6 +1,6 @@
 # fiat_shamir
 
-[fiat_shamir](https://mikail-eliyah.medium.com/the-matter-of-privacy-436ffe9af4b#:~:text=source%3A%20Oleg%20Andreev).-,ZK%20Challenge%2Dand%2DResponse,-Plaintext%20passcode%20passed)
+[fiat_shamir](https://mikail-eliyah.medium.com/the-matter-of-privacy-436ffe9af4b#eced)
 
 ## Non-Interactive
 ![fiat_shamir_non_interactive](fiat_shamir_non_interactive.png)
